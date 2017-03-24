@@ -69,6 +69,6 @@ class ServiceOfferingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def service_offering_params
-      params.require(:service_offering).permit(:name)
+      params.require(:service_offering).permit(:name, :agency)
     end
 end
